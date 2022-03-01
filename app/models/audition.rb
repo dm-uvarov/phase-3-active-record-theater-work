@@ -5,6 +5,9 @@ class Audition < ActiveRecord::Base
     def call_back
         self.hired = true
         self.save
+
+        # self.update(hired: true)
+        # self.update({:hired => true})
     end
 
     

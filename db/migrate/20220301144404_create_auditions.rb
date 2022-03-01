@@ -1,5 +1,5 @@
 class CreateAuditions < ActiveRecord::Migration[5.2]
-  def change
+  def change     # :audition
     create_table "auditions" do |t|
       t.string    :actor  
       t.string    :location 
