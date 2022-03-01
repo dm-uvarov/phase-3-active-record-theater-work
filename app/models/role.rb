@@ -1,5 +1,13 @@
 class Role < ActiveRecord::Base
-    has_many :Audition 
+    has_many :audition 
+
+    def auditions
+        return self.audition.all
+    end
+
+    def actors 
+        
+    end
 
 end
 
